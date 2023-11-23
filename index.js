@@ -5,13 +5,23 @@ var userSequence = [];
 var level = 0;
 var started = false;
 
-$(document).keydown(function () {
+$(".startbtn").click(function start() {
   if (!started) {
     $("h1").text("Level: " + level);
     nextSequence();
     started = true;
   }
 });
+
+$(document).keydown(function start() {
+  if (!started) {
+    $("h1").text("Level: " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
+
 
 $(".animalbtn").click(function () {
   var chosenAnimal = this.id;
