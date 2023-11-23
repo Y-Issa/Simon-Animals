@@ -13,7 +13,7 @@ $(document).keydown(function () {
   }
 });
 
-$(".button").click(function () {
+$(".animalbtn").click(function () {
   var chosenAnimal = this.id;
   playSound(chosenAnimal);
   userSequence.push(chosenAnimal);
