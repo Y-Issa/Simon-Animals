@@ -9,6 +9,25 @@ h1 {
     font-size: 3.5rem;
 }
 
+.startbtn {
+    font-family: 'Agbalumo', serif;
+    visibility: hidden;
+    background-color: coral;
+    border-radius: 5px;
+    border-style: none;
+    font-size: larger;
+}
+
+.startbtn:hover {
+    transform: scale(1.25);
+}
+
+@media (max-width:1028px){
+    .startbtn{
+        visibility: unset;
+    }
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -16,7 +35,7 @@ h1 {
     margin: 30px 0;
 }
 
-.button {
+.animalbtn {
     height: 200px;
     width: 200px;
     border-style:solid ;
